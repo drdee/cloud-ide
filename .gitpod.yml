@@ -18,4 +18,6 @@ image:
 vscode:
     extensions:
         - ms-toolsai.jupyter
+        - ms-toolsai.jupyter-keymap
+        - ms-toolsai.jupyter-renderers 
         - ms-python.python
