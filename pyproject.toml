@@ -1,15 +1,15 @@
 [tool.poetry]
 name = "Cloud Native IDE POC"
 version = "0.1.0"
-description = ""
+description = "An exploration of what a cloud native machine-learning / data science IDE could look like."
 authors = ["Mandy Gu <mgu@wealthsimple.com>, Diederik van Liere <dvanliere@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.9.9"
-fastapi = {version = "0.75.0", extras = ["all"]}
+python = "^3.10"
+fastapi = {version = "^0.75.0", extras = ["all"]}
 mlflow = "1.26.1"
 jsonpickle = "1.2"
-boto3[s3] = "^1.21.31"
+boto3 = {version = "^1.21.31", extras = ["s3"]}
 psycopg2 = "~2.9.3"
 ddtrace = "0.52.1"
 datadog = "0.35.0"
@@ -18,6 +18,7 @@ tritonclient = {version = "2.21.0", extras = ["http"]}
 Sphinx = "~4.5.0"
 sphinx-rtd-theme = "~1.0.0"
 slack-sdk = "~3.16.2"
+nteract_on_jupyter = "^2.1.3"
 
 [tool.poetry.dev-dependencies]
 click = "^8.1.2"
