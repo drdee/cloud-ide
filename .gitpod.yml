@@ -2,6 +2,7 @@
 tasks:
     - init: >
           gp open README.md;
+          curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -;
           poetry install;
       command: >
           gp open README.md;
@@ -17,4 +18,4 @@ image:
 vscode:
     extensions:
         - ms-toolsai.jupyter
-        - vscode.python
+        - ms-python.python
